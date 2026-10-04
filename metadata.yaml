@@ -1,0 +1,14 @@
+name: astrbot_plugin_bing_search
+display_name: 必应网页与图片搜索
+short_desc: 在 cn.bing.com 搜索公开网页并转发相关图片
+desc: >
+  独立 AstrBot 插件：让 AI 在 cn.bing.com 上搜索公开网页、按需筛选时效并引用来源，
+  也可单独搜索并转发 1-5 张相关图片。网页搜索与图片转发是两项完全独立的能力，
+  普通网页搜索不会暗中附带图片。图片在工具调用期间由插件直接发送到当前会话，
+  AI 只收到不含图片直链的文字回执。失败时日志与回执只记录稳定错误码，不泄密。
+version: 1.0.0
+author: kimyoung666
+repo: https://github.com/kimyoung666/astrbot_plugin_bing_search
+astrbot_version: ">=4.26.7"
+support_platforms:
+  - aiocqhttp

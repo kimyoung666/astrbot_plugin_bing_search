@@ -1,0 +1,88 @@
+{
+  "enabled": {
+    "description": "插件总开关",
+    "type": "bool",
+    "default": true,
+    "hint": "关闭后插件不响应任何搜索命令与工具调用。"
+  },
+  "enable_web_search": {
+    "description": "启用网页搜索",
+    "type": "bool",
+    "default": true,
+    "hint": "单独控制网页搜索工具（web_search_bing）与网页命令（/bing搜索 等）。"
+  },
+  "enable_image_search": {
+    "description": "启用图片搜索",
+    "type": "bool",
+    "default": true,
+    "hint": "单独控制图片搜索工具（image_search_bing）与搜图命令（/bing搜图 等）。"
+  },
+  "bing_host": {
+    "description": "地址来源",
+    "type": "string",
+    "default": "cn.bing.com",
+    "hint": "Bing 搜索地址，默认 cn.bing.com；可填写不带协议的主机名。"
+  },
+  "default_count": {
+    "description": "默认网页结果数",
+    "type": "int",
+    "default": 5,
+    "hint": "未显式指定条数时返回的网页结果数量。",
+    "slider": {
+      "min": 1,
+      "max": 50,
+      "step": 1
+    }
+  },
+  "default_image_count": {
+    "description": "默认转发图片数",
+    "type": "int",
+    "default": 3,
+    "hint": "未显式指定数量时转发的图片张数。",
+    "slider": {
+      "min": 1,
+      "max": 5,
+      "step": 1
+    }
+  },
+  "need_summary": {
+    "description": "返回搜索结果摘要",
+    "type": "bool",
+    "default": true,
+    "hint": "是否在网页结果中返回并展示摘要片段。"
+  },
+  "need_content": {
+    "description": "请求完整网页正文",
+    "type": "bool",
+    "default": false,
+    "hint": "是否请求完整网页正文；建议保持关闭。本版本仅保留配置项，默认不抓取正文。"
+  },
+  "need_url": {
+    "description": "返回来源地址",
+    "type": "bool",
+    "default": true,
+    "hint": "是否在网页结果中附带公开来源地址。"
+  },
+  "timeout_seconds": {
+    "description": "单次请求超时（秒）",
+    "type": "int",
+    "default": 30,
+    "hint": "单次搜索请求的超时时间，安全范围 5-120 秒。",
+    "slider": {
+      "min": 5,
+      "max": 120,
+      "step": 1
+    }
+  },
+  "max_snippet_chars": {
+    "description": "每条结果最大字符数",
+    "type": "int",
+    "default": 1200,
+    "hint": "每条结果进入 AI 上下文时的最大字符数，范围 200-8000。",
+    "slider": {
+      "min": 200,
+      "max": 8000,
+      "step": 100
+    }
+  }
+}
