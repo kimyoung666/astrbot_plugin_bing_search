@@ -64,4 +64,4 @@
 
 ## 灵感来源
 
-插件结构参考 [AstrBot 插件开发指南](https://docs.astrbot.app/dev/star/plugin-new.html) 与官方 helloworld 模板。
+插件结构参考 [AstrBot 插件开发指南](https://docs.astrbot.app/dev/star/plugin-new.html) 。
